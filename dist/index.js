@@ -4007,8 +4007,9 @@ if (!process.env.GITHUB_EVENT) {
 }
 const ghEvent = JSON.parse(process.env.GITHUB_EVENT)
 const getCheckboxText = core.getInput('checkbox_text', { required: true })
-
-console.log(getCheckboxText);
+debug('Here I am printing my custom logs');
+debug(getCheckboxText);
+debug('*********************************');
 
 let branch
 if (ghEvent.pull_request) {
