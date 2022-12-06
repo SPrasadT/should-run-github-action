@@ -4009,6 +4009,7 @@ const ghEvent = JSON.parse(process.env.GITHUB_EVENT)
 const getCheckboxText = core.getInput('checkbox_text', { required: true })
 debug('Here I am printing my custom logs');
 debug(getCheckboxText);
+debug(core.getInput('checkbox'));
 debug('*********************************');
 
 let branch
